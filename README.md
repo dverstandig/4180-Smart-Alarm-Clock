@@ -1,5 +1,7 @@
 ## Welcome to GitHub Pages
 
+TEST121212
+
 You can use the [editor on GitHub](https://github.com/Dverstandig/4180-Smart-Alarm-Clock/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
