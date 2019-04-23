@@ -1,0 +1,95 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "raspberry pi",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CommuteToWork",
+                    "slots": [],
+                    "samples": [
+                        "Commute",
+                        "run-down",
+                        "run",
+                        "Daily Rundown"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AlarmSet",
+                    "slots": [
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "samples": [
+                                "{time}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Change my Alarm to {time}",
+                        "Set my Alarm to {time}"
+                    ]
+                },
+                {
+                    "name": "CancelAlarm",
+                    "slots": [],
+                    "samples": [
+                        "Stop my Alarm"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AlarmSet",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.191385482380.1000456938441"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.191385482380.1000456938441",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What time would you like to set your alarm for?"
+                    }
+                ]
+            }
+        ]
+    }
+}
