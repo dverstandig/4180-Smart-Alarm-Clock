@@ -3,14 +3,61 @@
 TEST121212
 
 ## Authors
-Dylan Verstandig
-Jacob Lattie
-Peter Nguyen
+
+Dylan Verstandig\
+Jacob Lattie\
+Peter Nguyen\
 
 ## Project Overview
 
 The Smart Alarm Clock is a responsive user interface for quickly recieving information about your day. Powered by a Raspberry Pi 3 and developed with Alexa Voice Services, the Smart Alarm Clock will keep you prepared.
 
+### Gallery
+
+Insert Images
+
+## Hardware and Software
+
+# Hardware
+
+```
+Raspberry Pi 3
+Adafruit 7" 800x480 HDMI Backpack
+USB Microphone
+Auxiliary Speaker
+```
+
+
+# Software
+
+```
+Alexa Voice Services (AVS)
+Qt Creator
+PyQt5
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Original README 
 
 You can use the [editor on GitHub](https://github.com/Dverstandig/4180-Smart-Alarm-Clock/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
