@@ -35,23 +35,23 @@ Qt Creator
 PyQt5
 ```
 
-## Setting up Alexa Environment
+## Alexa Environment
 
 For Dylan <3
 
 ## GUI Environment
 
-Our group used PyQt and Qt Creator to produce the Graphical User Interface for our alarm clock. By using QtCreator to set the intitial UI design of the application, we were able to quickly initialize any widgets needed. We chose PyQt over Qt5.12 due to the ease of use when delpoying Python3 based code on the Raspberry Pi. In doing so, we avoided any cross compling errors when working between OSX and Raspian Jessie OS. 
+Our group used [PyQt](https://wiki.python.org/moin/PyQt) and Qt Creator to produce the Graphical User Interface for our alarm clock. By using QtCreator to set the intitial UI design of the application, we were able to quickly initialize any widgets needed. We chose PyQt over Qt5.12(C++) due to the ease of use when delpoying Python3 based code on the Raspberry Pi. In doing so, we avoided any cross compling errors when working between OSX and Raspian Jessie OS. 
 
 Below are the packages and dependencies needed to get your own Smart Alarm up and running.
 
-First, if on OSX, use homebrew (LINK THIS) to install required packages:
+First, if on OSX, use [homebrew](https://brew.sh/) to install required packages:
 ```
 brew install python3
 brew install qt5
 brew install pyqt5
 ```
-Now, on the machine you are developing on, download QTCreator(LINK THIS) to begin creating the UI of the Smart Alarm Clock:
+Now, on the machine you are developing on, download [QTCreator](https://www.qt.io/download) to begin creating the UI of the Smart Alarm Clock:
 ```
 Qt Creator Example
 ```
