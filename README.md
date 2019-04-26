@@ -62,8 +62,43 @@ pyuic5 mainwindow.ui > mainwindow_auto.py
 As a debug step, I often ran the GUI code on my personal machine to preview any functionalities I implemented. To do so, create a main.py file to run the PyQt application
  
 ``` python
-def cat:
-  print('I love cats')
+import sys
+import PyQt5
+from PyQt.QtWidgets import *
+import mainwindow_auto
+
+# Main Window of GUI
+class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
+    # Call setup for widgits in mainwindow_auto
+    def __init__(self):
+        super(self.__class__, self).__init__()
+        self.setupUi(self)
+
+        # Timer connect every second
+        self.time_label.setAlignment(Qt.AlignCenter)
+        timer = QTimer(self)
+        timer.timeout.connect(self.showTime)
+        timer.start()
+
+    # Date Label Connect Function to display digital time
+    def showTime(self):
+        time = QTime.currentTime()
+        time_text = time.toString('hh:mm:ss')
+        if (time.second() % 2) == 0:
+            time_text = time_text[:2] + ' ' + time_text[3:]
+            time_text = time_text[:5] + ' ' + time_text[6:]
+        self.time_label.setText(time_text)
+
+# Create Application in main
+def main():
+    app = QApplication(sys.argv)
+    form = MainWindow()
+    form.show()
+    sys.exit(app.exec_())
+
+# Script in Python3
+if __name__ == "__main__":
+    main()
 ```
 
 ```
