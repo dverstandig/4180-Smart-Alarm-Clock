@@ -6,19 +6,19 @@ TEST121212
 
 Dylan Verstandig\
 Jacob Lattie\
-Peter Nguyen\
+Peter Nguyen
 
 ## Project Overview
 
-The Smart Alarm Clock is a responsive user interface for quickly recieving information about your day. Powered by a Raspberry Pi 3 and developed with Alexa Voice Services, the Smart Alarm Clock will keep you prepared.
+The Smart Alarm Clock is a responsive graphical user interface for quickly recieving information about your day. Powered by a Raspberry Pi 3 and developed with Alexa Voice Services, the Smart Alarm Clock will keep you prepared.
 
-### Gallery
+## Gallery
 
-Insert Images
+Insert Images. NEED TO GET THEM OFF OF RPI 
 
 ## Hardware and Software
 
-# Hardware
+### Hardware
 
 ```
 Raspberry Pi 3
@@ -27,8 +27,7 @@ USB Microphone
 Auxiliary Speaker
 ```
 
-
-# Software
+### Software
 
 ```
 Alexa Voice Services (AVS)
@@ -36,15 +35,28 @@ Qt Creator
 PyQt5
 ```
 
+## Setting up Alexa Environment
 
+For Dylan <3
 
+## GUI Environment
 
+Our group used PyQt and Qt Creator to produce the Graphical User Interface for our alarm clock. By using QtCreator to set the intitial UI design of the application, we were able to quickly intialize any widgets needed. We chose PyQt over QT5.0 due to the ease of use when delpoying Python based code on the Raspberry Pi. In doing so, we avoided and cross compliing errors when working between OSX and Raspian OS. 
 
+Below are the packages and dependencies needed to get your own Smart Alarm up and running.\
 
-
-
-
-
+First, on the machine you are developing on, download QTCreator (LINK THIS).
+If on OSX, use homebrew (LINK THIS) to install required packages:
+```
+brew install python3
+brew install qt5
+brew install pyqt5
+```
+On your Raspberry Pi, use the apt-get command for your packages:
+```
+sudo apt-get install python3
+sudo apt-get install python3-pyqt5
+```
 
 
 
