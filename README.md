@@ -37,7 +37,30 @@ PyQt5
 
 ## Alexa Environment
 
-For Dylan <3
+### Setting up an Alexa Skill
+ 1. Log on to https://developer.amazon.com/ and create a developer account 
+ 2. In the Alexa Developer Console, click on "Create Skill"
+ 3. Select "Custom Skill" and "Start from Scratch"
+ 4. Click on the "Json Editor" Tab on the left side of the screen and copy paste the skills.json file found in the models   folder of this github
+ 5. Under Service Endpoint type, select "AWS Lambda ARN" and copy the skill ID onto your clipboard
+ 6. Under Permissions, allow the skill to use the devices full address
+### Setting up AWS Lambda
+ 1. Log onto https://aws.amazon.com/ and create an account (You might need to input credit card information for billing)
+ 2. Under Location, make sure it is specified as "US-East (N. Virginia)"
+ 3. Select Lambda from the available services and click on "Create Function"
+ 4. Select "Author from Scratch" and name you lambda function
+ 5. Select pyhton 3.7 as the runtime, and "lambda_basic_execution" as the execution role
+ 6. Click on the "Create Function" button
+ 7. Under "Add Triggers", select "Alexa SKills Kit" and copy paste the skill id in you clipboard
+ 8. Under "Code Entry Type", select "Upload from ZIP"
+ 9. Upload a zip file of the "Lamdba.py" code found in this github along with the necesary libraries (In this case googlemaps,  ask-sdk-core and ask-sdk-model are all required)
+ 10. In the Environment Variables Section, Enter the Following:
+ Key	Value API_KEY	(Put the Google API key in here)
+ COUNTRY	(Put your country name in here, eg UK, USA)
+ WORK	(Put your work address in here)
+ HOME	(Optional, if you cannot set your home address in the Alexa app, put it here)
+ 11.Click save and copy the ARN number found on the top right of the function
+ 12. Copy paste the ARN number in the Alexa Developer Console under "Enpoint"
 
 ## GUI Environment
 
