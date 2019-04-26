@@ -2,6 +2,16 @@
 
 TEST121212
 
+## Authors
+Dylan Verstandig
+Jacob Lattie
+Peter Nguyen
+
+## Project Overview
+
+The Smart Alarm Clock is a responsive user interface for quickly recieving information about your day. Powered by a Raspberry Pi 3 and developed with Alexa Voice Services, the Smart Alarm Clock will keep you prepared.
+
+
 You can use the [editor on GitHub](https://github.com/Dverstandig/4180-Smart-Alarm-Clock/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
