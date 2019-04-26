@@ -41,26 +41,40 @@ For Dylan <3
 
 ## GUI Environment
 
-Our group used PyQt and Qt Creator to produce the Graphical User Interface for our alarm clock. By using QtCreator to set the intitial UI design of the application, we were able to quickly intialize any widgets needed. We chose PyQt over QT5.0 due to the ease of use when delpoying Python based code on the Raspberry Pi. In doing so, we avoided and cross compliing errors when working between OSX and Raspian OS. 
+Our group used PyQt and Qt Creator to produce the Graphical User Interface for our alarm clock. By using QtCreator to set the intitial UI design of the application, we were able to quickly initialize any widgets needed. We chose PyQt over Qt5.12 due to the ease of use when delpoying Python3 based code on the Raspberry Pi. In doing so, we avoided any cross compling errors when working between OSX and Raspian Jessie OS. 
 
-Below are the packages and dependencies needed to get your own Smart Alarm up and running.\
+Below are the packages and dependencies needed to get your own Smart Alarm up and running.
 
-First, on the machine you are developing on, download QTCreator (LINK THIS).
-If on OSX, use homebrew (LINK THIS) to install required packages:
+First, if on OSX, use homebrew (LINK THIS) to install required packages:
 ```
 brew install python3
 brew install qt5
 brew install pyqt5
 ```
-On your Raspberry Pi, use the apt-get command for your packages:
+Now, on the machine you are developing on, download QTCreator(LINK THIS) to begin creating the UI of the Smart Alarm Clock:
+```
+Qt Creator Example
+```
+After editing the .ui file, simply run the following command to convert the .ui file into a python class that initializes the MainWindow object of your GUI as well as any widgets declared from Qt Creator:
+```
+pyuic5 mainwindow.ui > mainwindow_auto.py
+```
+As a debug step, I often ran the GUI code on my personal machine to preview any functionalities I implemented. To do so, create a main.py file to run the PyQt application
+```
+Create main.py. SHOW SIMPLE CODE FOR THIS
+```
+Let's recap. Your project folder should contain the following files (we can ignore the .cpp and .h extensions). Transport the following files from your development machine to the Raspberry Pi:
+```
+|__Project_Directory
+   |__main.py
+   |__mainwindow.ui
+   |__mainwindow_auto.py
+```
+Finally, on your Raspberry Pi, use the apt-get command to download the packages needed to display your new GUI:
 ```
 sudo apt-get install python3
 sudo apt-get install python3-pyqt5
 ```
-
-
-
-
 
 
 
