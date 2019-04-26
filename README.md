@@ -45,7 +45,7 @@ PyQt5
  5. Under Service Endpoint type, select "AWS Lambda ARN" and copy the skill ID onto your clipboard
  6. Under Permissions, allow the skill to use the devices full address
 ### Setting up AWS Lambda
- 1. Log onto https://aws.amazon.com/ and create an account (You might need to input credit card information for billing)
+ 1. Log on to https://aws.amazon.com/ and create an account (You might need to input credit card information for billing)
  2. Under Location, make sure it is specified as "US-East (N. Virginia)"
  3. Select Lambda from the available services and click on "Create Function"
  4. Select "Author from Scratch" and name you lambda function
