@@ -56,10 +56,10 @@ PyQt5
  9. Upload a zip file of the "Lamdba.py" code found in this github along with the necesary libraries (In this case googlemaps,  ask-sdk-core and ask-sdk-model are all required)
  10. In the Environment Variables Section, Enter the Following:
  ```
-API_KEY	          | "Google API Key"
-COUNTRY	          | "Home Country eg USA"
-WORK	             | "Work Address"
-HOME	             | "Home Address"
+API_KEY	             |  "Google API Key"
+COUNTRY	             |  "Home Country eg USA"
+WORK	             |  "Work Address"
+HOME	             |  "Home Address"
 ```
  11.Click save and copy the ARN number found on the top right of the function
  12. Copy paste the ARN number in the Alexa Developer Console under "Enpoint"
