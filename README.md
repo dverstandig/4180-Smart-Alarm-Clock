@@ -42,7 +42,7 @@ Qt Creator
 PyQt5
 ```
 ### High Level Diagram of Software Architecture
-![High Level Diagram](https://Dverstandig.github.com/4180-Smart-Alarm-Clock/HLD.png)
+![High Level Diagram](https://github.com/Dverstandig/4180-Smart-Alarm-Clock/blob/master/HLD.png)
 
 ## Alexa Environment
 
