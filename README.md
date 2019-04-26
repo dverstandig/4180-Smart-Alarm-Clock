@@ -108,7 +108,7 @@ cd /home/pi/
 sudo bash setup.sh config.json [-s 1234]
 ```
 9. Type in "AGREE" and wait for the porject to build
-10. To Run Alexa on the App, run the follwing:
+10. To run Alexa on the App, run the follwing:
 ```
 cd /home/pi/
 sudo bash startsample.sh
