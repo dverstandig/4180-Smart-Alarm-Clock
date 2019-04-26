@@ -60,6 +60,12 @@ After editing the .ui file, simply run the following command to convert the .ui 
 pyuic5 mainwindow.ui > mainwindow_auto.py
 ```
 As a debug step, I often ran the GUI code on my personal machine to preview any functionalities I implemented. To do so, create a main.py file to run the PyQt application
+
+{% highlight python %}
+def cat:
+  print('I love cats')
+{% endhighlight %}
+
 ```
 Create main.py. SHOW SIMPLE CODE FOR THIS
 ```
