@@ -89,7 +89,9 @@ HOME	             |     "Home Address"
 ```
  11. Click save and copy the ARN number found on the top right of the function
  12. Copy paste the ARN number in the Alexa Developer Console under "Enpoint"
+ 
 ## Setting up Alexa on the Raspberry Pi
+
  1. Download Raspian OS (NOOBS_v2_9_0 or newer)
  2. Run the follwing commands on the raspberry pi:
  ```
