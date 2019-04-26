@@ -63,7 +63,7 @@ Places API
  1. Log on to https://aws.amazon.com/ and create an account (You might need to input credit card information for billing)
  2. Under Location, make sure it is specified as "US-East (N. Virginia)"
  3. Select Lambda from the available services and click on "Create Function"
- 4. Select "Author from Scratch" and name you lambda function
+ 4. Select "Author from Scratch" and name your lambda function
  5. Select pyhton 3.7 as the runtime, and "lambda_basic_execution" as the execution role
  6. Click on the "Create Function" button
  7. Under "Add Triggers", select "Alexa SKills Kit" and copy paste the skill id in you clipboard
