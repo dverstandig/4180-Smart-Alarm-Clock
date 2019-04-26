@@ -89,7 +89,45 @@ HOME	             |     "Home Address"
 ```
  11. Click save and copy the ARN number found on the top right of the function
  12. Copy paste the ARN number in the Alexa Developer Console under "Enpoint"
+## Setting up Alexa on the Raspberry Pi
+ 1. Download Raspian OS (NOOBS_v2_9_0 or newer)
+ 2. Run the follwing commands on the raspberry pi:
+ ```
+ wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/setup.sh \
+ wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/genConfig.sh \
+ wget https://raw.githubusercontent.com/alexa/avs-device-sdk/master/tools/Install/pi.sh
+```
+3. Go to https://developer.amazon.com/alexa/console/avs/products and click create a new product
+4. Name it "Raspberry Pi"
+5. Under "Security Profile", navigate down to "Other devices and platforms"
+6. Click on download and save the file as "config.json"
+7. Place this file in you /home/pi directory
+8. Run the follwing commands:
+```
+cd /home/pi/
+sudo bash setup.sh config.json [-s 1234]
+```
+9. Type in "AGREE" and wait for the porject to build
+10. To Run Alexa on the App, run the follwing:
+```
+cd /home/pi/
+sudo bash startsample.sh
+ ```
+11. Follow the instructions in the terminal window to authenticate the device, by login on to amazon and entering the unique code found in the terminal
 
+### Running Alexa
+To Run:
+ ```
+cd /home/pi/
+sudo bash startsample.sh
+ ```
+To Build:
+```
+ cd /home/pi/build/SampleApp
+sudo make
+ ```
+
+ 
 ## GUI Environment
 
 Our group used [PyQt](https://wiki.python.org/moin/PyQt) and Qt Creator to produce the Graphical User Interface for our alarm clock. By using QtCreator to set the intitial UI design of the application, we were able to quickly initialize any widgets needed. We chose PyQt over Qt5.12(C++) due to the ease of use when delpoying Python3 based code on the Raspberry Pi. In doing so, we avoided any cross compling errors when working between OSX and Raspian Jessie OS. 
