@@ -1,7 +1,3 @@
-## Welcome to GitHub Pages
-
-TEST121212
-
 ## Contents
 
 * TOC
@@ -144,7 +140,7 @@ brew install python3
 brew install qt5
 brew install pyqt5
 ```
-Now, on the machine you are developing on, download [QTCreator](https://www.qt.io/download) to begin creating the UI of the Smart Alarm Clock:
+Now, on the machine you are developing on, download [QtCreator](https://www.qt.io/download) to begin creating the UI of the Smart Alarm Clock:
 ```
 Qt Creator Example
 ```
