@@ -9,9 +9,9 @@ TEST121212
 
 ## Authors
 
-Dylan Verstandig\
-Jacob Lattie\
-Peter Nguyen
+- Dylan Verstandig
+- Jacob Lattie
+- Peter Nguyen
 
 ## Project Overview
 
