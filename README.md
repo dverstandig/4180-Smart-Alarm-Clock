@@ -46,7 +46,9 @@ PyQt5
  4. Click on the "Json Editor" Tab on the left side of the screen and copy paste the skills.json file found in the models   folder of this github
  5. Under Service Endpoint type, select "AWS Lambda ARN" and copy the skill ID onto your clipboard
  6. Under Permissions, allow the skill to use the devices full address
+ 
 ### Setting up Google Maps API
+
  1. Go to https://developers.google.com/console and create an account (You might need to input credit card information for billing)
  2. Create a new Project
  3. Enable the following APIs:
@@ -59,7 +61,9 @@ Maps Elevation API
 Places API
 ```
  4. Create a new API key and copy it to your clipboard
+ 
 ### Setting up AWS Lambda
+
  1. Log on to https://aws.amazon.com/ and create an account (You might need to input credit card information for billing)
  2. Under Location, make sure it is specified as "US-East (N. Virginia)"
  3. Select Lambda from the available services and click on "Create Function"
