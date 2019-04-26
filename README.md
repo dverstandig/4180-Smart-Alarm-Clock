@@ -44,6 +44,19 @@ PyQt5
  4. Click on the "Json Editor" Tab on the left side of the screen and copy paste the skills.json file found in the models   folder of this github
  5. Under Service Endpoint type, select "AWS Lambda ARN" and copy the skill ID onto your clipboard
  6. Under Permissions, allow the skill to use the devices full address
+### Setting Up Google Maps API
+ 1. Go to https://developers.google.com/console and create an account (You might need to input credit card information for billing)
+ 2. Create a new Project
+ 3. Enable the following APIs:
+ ```
+Directions API
+Distance API
+Geocoding API	
+Geolocation API	
+Maps Elevation API
+Places API
+```
+ 4. Create a new API key and copy it to your clipboard
 ### Setting up AWS Lambda
  1. Log on to https://aws.amazon.com/ and create an account (You might need to input credit card information for billing)
  2. Under Location, make sure it is specified as "US-East (N. Virginia)"
@@ -56,12 +69,12 @@ PyQt5
  9. Upload a zip file of the "Lamdba.py" code found in this github along with the necesary libraries (In this case googlemaps,  ask-sdk-core and ask-sdk-model are all required)
  10. In the Environment Variables Section, Enter the Following:
  ```
-API_KEY	             |     "Google API Key"
-COUNTRY	             |     "Home Country eg USA"
+API_KEY	             |     API Key created in step 4 of "Setting Up Google Maps API"
+COUNTRY	             |     "Home Country"
 WORK	             |     "Work Address"
 HOME	             |     "Home Address"
 ```
- 11.Click save and copy the ARN number found on the top right of the function
+ 11. Click save and copy the ARN number found on the top right of the function
  12. Copy paste the ARN number in the Alexa Developer Console under "Enpoint"
 
 ## GUI Environment
