@@ -59,7 +59,7 @@ After editing the .ui file, simply run the following command to convert the .ui 
 ```
 pyuic5 mainwindow.ui > mainwindow_auto.py
 ```
-As a debug step, I often ran the GUI code on my personal machine to preview any functionalities I implemented. To do so, create a main.py file to run the PyQt application
+As a debug step, I often ran the GUI code on my personal machine to preview any functionalities I implemented. To do so, create a main.py file to run the PyQt application. The following code serves as a good skeleton file when building the functionality of the other widgets in your GUI:
  
 ``` python
 import sys
@@ -101,9 +101,6 @@ if __name__ == "__main__":
     main()
 ```
 
-```
-Create main.py. SHOW SIMPLE CODE FOR THIS
-```
 Let's recap. Your project folder should contain the following files (we can ignore the .cpp and .h extensions). Transport the following files from your development machine to the Raspberry Pi:
 ```
 |__Project_Directory
@@ -116,7 +113,10 @@ Finally, on your Raspberry Pi, use the apt-get command to download the packages 
 sudo apt-get install python3
 sudo apt-get install python3-pyqt5
 ```
-
+Navigate to your project directory and execute the main file to visualize your PyQt GUI!
+```
+python3 main.py
+```
 
 
 
