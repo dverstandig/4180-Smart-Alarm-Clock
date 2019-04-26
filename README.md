@@ -90,7 +90,7 @@ HOME	             |     "Home Address"
  11. Click save and copy the ARN number found on the top right of the function
  12. Copy paste the ARN number in the Alexa Developer Console under "Enpoint"
  
-## Setting up Alexa on the Raspberry Pi
+### Setting up Alexa on the Raspberry Pi
 
  1. Download Raspian OS (NOOBS_v2_9_0 or newer)
  2. Run the follwing commands on the raspberry pi:
@@ -135,6 +135,8 @@ sudo make
 Our group used [PyQt](https://wiki.python.org/moin/PyQt) and Qt Creator to produce the Graphical User Interface for our alarm clock. By using QtCreator to set the intitial UI design of the application, we were able to quickly initialize any widgets needed. We chose PyQt over Qt5.12(C++) due to the ease of use when delpoying Python3 based code on the Raspberry Pi. In doing so, we avoided any cross compling errors when working between OSX and Raspian Jessie OS. 
 
 Below are the packages and dependencies needed to get your own Smart Alarm up and running.
+
+### Development Machine
 
 First, if on OSX, use [homebrew](https://brew.sh/) to install required packages:
 ```
@@ -199,6 +201,9 @@ Let's recap. Your project folder should contain the following files (we can igno
    |__mainwindow.ui
    |__mainwindow_auto.py
 ```
+
+### Running the Raspberry Pi GUI
+
 Finally, on your Raspberry Pi, use the apt-get command to download the packages needed to display your new GUI:
 ```
 sudo apt-get install python3
