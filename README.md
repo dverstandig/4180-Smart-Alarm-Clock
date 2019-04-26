@@ -36,6 +36,8 @@ AWS Lambda
 Qt Creator
 PyQt5
 ```
+### High Level Diagram of Software Architecture
+![alt text](https://raw.githubusercontent.com/Dverstandig/4180-Smart-Alarm-Clock/HLD.png)
 
 ## Alexa Environment
 
