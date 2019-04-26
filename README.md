@@ -31,6 +31,8 @@ Auxiliary Speaker
 
 ```
 Alexa Voice Services (AVS)
+Alexa Developer Console
+AWS Lambda
 Qt Creator
 PyQt5
 ```
