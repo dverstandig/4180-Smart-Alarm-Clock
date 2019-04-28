@@ -123,7 +123,7 @@ sudo bash startsample.sh
  ```
 To Build:
 ```
- cd /home/pi/build/SampleApp
+cd /home/pi/build/SampleApp
 sudo make
  ```
 
