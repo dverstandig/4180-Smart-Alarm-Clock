@@ -17,7 +17,7 @@ The Smart Alarm Clock is a responsive graphical user interface for quickly recie
 
 ![SmartAlarmImage](smart_alarm.png)
 
-[DemoVid](https://www.youtube.com/watch?v=yNKB0Weq6vo)
+[Demonstration Video](https://www.youtube.com/watch?v=yNKB0Weq6vo)
 
 ## Hardware and Software
 
