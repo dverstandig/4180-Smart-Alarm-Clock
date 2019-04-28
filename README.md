@@ -15,7 +15,9 @@ The Smart Alarm Clock is a responsive graphical user interface for quickly recie
 
 ## Gallery
 
-Insert Images. NEED TO GET THEM OFF OF RPI 
+![SmartAlarmImage](smart_alarm.png)
+
+[DemoVid](https://www.youtube.com/watch?v=yNKB0Weq6vo)
 
 ## Hardware and Software
 
