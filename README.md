@@ -146,7 +146,7 @@ Qt Creator Example
 ```
 After editing the .ui file, simply run the following command to convert the .ui file into a python class that initializes the MainWindow object of your GUI as well as any widgets declared from Qt Creator:
 ```
-pyuic5 mainwindow.ui > mainwindow_auto.py
+pyuic5 mainwindow.ui > mainwindow_init.py
 ```
 As a debug step, I often ran the GUI code on my personal machine to preview any functionalities I implemented. To do so, create a main.py file to run the PyQt application. The following code serves as a good skeleton file when building the functionality of the other widgets in your GUI:
  
@@ -154,11 +154,11 @@ As a debug step, I often ran the GUI code on my personal machine to preview any 
 import sys
 import PyQt5
 from PyQt.QtWidgets import *
-import mainwindow_auto
+import mainwindow_init
 
 # Main Window of GUI
-class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
-    # Call setup for widgits in mainwindow_auto
+class MainWindow(QMainWindow, mainwindow_init.Ui_MainWindow):
+    # Call setup for widgits in mainwindow_init
     def __init__(self):
         super(self.__class__, self).__init__()
         self.setupUi(self)
@@ -195,7 +195,7 @@ Let's recap. Your project folder should contain the following files (we can igno
 |__Project_Directory
    |__main.py
    |__mainwindow.ui
-   |__mainwindow_auto.py
+   |__mainwindow_init.py
 ```
 
 ### Running the Raspberry Pi GUI
