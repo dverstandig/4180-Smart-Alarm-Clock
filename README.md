@@ -142,11 +142,7 @@ brew install python3
 brew install qt5
 brew install pyqt5
 ```
-Now, on the machine you are developing on, download [QtCreator](https://www.qt.io/download) to begin creating the UI of the Smart Alarm Clock:
-```
-Qt Creator Example
-```
-After editing the .ui file, simply run the following command to convert the .ui file into a python class that initializes the MainWindow object of your GUI as well as any widgets declared from Qt Creator:
+Now, on the machine you are developing on, download [QtCreator](https://www.qt.io/download) to begin creating the UI of the Smart Alarm Clock. After editing the .ui file, simply run the following command to convert the .ui file into a python class that initializes the MainWindow object of your GUI as well as any widgets declared from Qt Creator:
 ```
 pyuic5 mainwindow.ui > mainwindow_init.py
 ```
@@ -211,3 +207,9 @@ Navigate to your project directory and execute the main file to visualize your P
 ```
 python3 main.py
 ```
+
+## Contact
+
+- Dylan Verstandig: dverstandig@gatech.edu
+- Jacob Lattie: jhlattie@gatech.edu
+- Peter Nguyen: peternguyen@gatech.edu
