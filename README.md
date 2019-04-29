@@ -10,7 +10,7 @@
 - Peter Nguyen
 
 ## Presentation
-
+[Final Presentation Download](4180-Smart-Alarm-Clock.pptx)
 
 
 ## Project Overview
