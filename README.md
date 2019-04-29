@@ -9,6 +9,10 @@
 - Jacob Lattie
 - Peter Nguyen
 
+## Presentation
+
+
+
 ## Project Overview
 
 The Smart Alarm Clock is a responsive graphical user interface for quickly recieving information about your day. Powered by a Raspberry Pi 3 and developed with Alexa Voice Services, the Smart Alarm Clock will keep you prepared.
